@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Project output</title>
+</head>
+<body>
+    <style> 
+    body{
+        background-color: rgb(172, 244, 220);
+    }
+    h1{
+        font-family:Arial, Helvetica, sans-serif;
+        color: rgb(7, 7, 7);
+        font-weight: bold;
+        font-size: 60px;
+        position: absolute;
+        left: 260px;
+    }
+    p{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: rgb(7, 7, 7);
+        font-style:italic;
+        font-size: 30px;
+        position: absolute;
+        left: 550px; 
+        top: 90px;
+    }
+    .otput{
+        background-color: rgb(242, 126, 215);
+        border-radius: 4px;
+        box-shadow: 5px 5px 8px rgb(109, 109, 109);
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 30px;
+        position: absolute;
+        left: 700px;
+        top: 400px;
+        padding: 30px;
+    }
+    </style>
+    <h1> What the calculator calculates.. </h1>
+
+    <p> The output of {{num1}} and {{num2}} is {{results}} </p>
+
+    <div class="otput">
+        {{results}}
+    </div>
+
+
+</body>
+</html>

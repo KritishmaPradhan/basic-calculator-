@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Project</title>
+</head>
+<body>
+    <style>
+        body{
+        background-color: rgb(163, 247, 173);
+        height:auto;
+        width:1000px;
+    }
+    h1{
+        font-family:Arial, Helvetica, sans-serif;
+        color: rgb(7, 7, 7);
+        font-weight: bold;
+        font-size: 60px;
+        position: absolute;
+        left: 470px;
+    }
+    p{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: rgb(7, 7, 7);
+        font-style:italic;
+        font-size: 30px;
+        position: absolute;
+        left: 580px; 
+        top: 79px;
+    }
+    .input_container{
+        position: absolute;
+        left: 230px;
+        top: 300px;
+        font-size: 20px;
+    }
+    label{
+        border-radius: 4px;
+        padding: 30px;
+    }
+    input{
+        background-color: rgb(85, 248, 128);
+        border-radius: 4px;
+        padding: 30px;
+        margin: 20px;
+        border: none;
+        box-shadow: 5px 5px 8px rgb(95, 94, 94); 
+    }
+    input:hover{
+        transform: scale(1.1);
+    }
+    .buttons{
+        position: absolute;
+        left: 610px;
+        top: 500px;
+    }
+    .bot1:hover{
+        transform: scale(1.1);
+    }
+    .bot2:hover{
+        transform: scale(1.1);
+    }
+    .bot3:hover{
+        transform: scale(1.1);
+    }
+    .bot4:hover{
+        transform: scale(1.1);
+    }
+    .bot1{
+        background-color: rgb(187, 251, 98);
+        border-radius: 4px;
+        padding: 25px;
+        border: none;
+        margin: 10px;
+        box-shadow: 5px 5px 8px rgb(95, 94, 94); 
+        font-size: 30px;
+    }
+    .bot2{
+        background-color: rgb(187, 251, 98);
+        border-radius: 4px;
+        padding: 25px;
+        border: none;
+        margin: 10px;
+        box-shadow: 5px 5px 8px rgb(95, 94, 94); 
+        font-size: 30px;
+    }
+    .bot3{
+        background-color: rgb(182, 251, 85);
+        border-radius: 4px;
+        padding: 25px;
+        border: none;
+        margin: 10px;
+        box-shadow: 5px 5px 8px rgb(95, 94, 94); 
+        font-size: 30px;
+    }
+    .bot4{
+        background-color: rgb(187, 251, 98);
+        border-radius: 4px;
+        padding: 25px;
+        border: none;
+        margin: 10px;
+        box-shadow: 5px 5px 8px rgb(95, 94, 94); 
+        font-size: 30px;
+    }
+    </style>
+    <h1> The Calculator </h1>
+    <p> Wow! You will be surprised </p>
+
+    <form action='/about'  method="GET">
+     {% csrf_token %}
+     <div class= "input_container" >
+        <label>Enter First Number </label>
+        <input type="number" name="number1" placeholder="enter number"> </input>
+        <label>Enter Second Number </label>
+        <input type="number" name="number2" placeholder="enter number"> </input>
+    </div>
+    <div class= 'buttons'>
+        <button type="submit" name="operation" value="addition" class="bot1">+</button>
+        <button type="submit" name="operation" value="subtraction" class="bot2">-</button>
+        <button type="submit" name="operation" value="multiplication" class="bot3">*</button>
+        <button type="submit" name="operation" value="division" class="bot4">/</button>
+    </div>
+</form>
+
+    </form>
+</body>
+</html>
