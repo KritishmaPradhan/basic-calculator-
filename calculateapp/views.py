@@ -23,6 +23,10 @@ def about(self):
             result = input_text1a * input_text2a
         elif operation == 'division':
             result = input_text1a / input_text2a
+        elif operation == 'modular':
+            result = input_text1a % input_text2a
+        elif operation == 'concatinate':
+            result = str(input_text1) +str(input_text2)
 
     inputs ={ 'num1' : input_text1a, 'num2' : input_text2a,  'results': result}                                                                       
     return render(self, 'about.html', inputs)

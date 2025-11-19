@@ -9,25 +9,23 @@
     <style> 
     body{
         background-color: rgb(172, 244, 220);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
     }
     h1{
         font-family:Arial, Helvetica, sans-serif;
         color: rgb(7, 7, 7);
         font-weight: bold;
         font-size: 60px;
-        position: absolute;
-        left: 260px;
     }
     p{
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         color: rgb(7, 7, 7);
         font-style:italic;
         font-size: 30px;
-        position: absolute;
-        left: 50%;
-        top: 30%;
-        transform: translate(-50%, -50%);   /*ensures the item in middle, whether screen squeez or expand*/
-        
+        /* transform: translate(-50%, -50%);   /*ensures the item in middle, whether screen squeez or expand*/ 
     }
     .otput{
         background-color: rgb(242, 126, 215);
@@ -36,10 +34,17 @@
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 30px;
         padding: 20px;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%); 
+        /* transform: translate(-50%, -50%);  */
+    }
+    .refreshbtn{
+        background-color:rgb(250, 174, 232) ;
+        padding: 20px;
+        margin-top: 50px;
+        border-radius: 20px;
+        border: none;
+    }
+    .refreshbtn:hover{
+        background-color: rgb(251, 209, 241);
     }
 
     </style>
@@ -50,7 +55,11 @@
     <div class="otput">
         {{results}}
     </div>
+    <a href = "/">
+        <button class = "refreshbtn">Refresh</button>
+    </a>
 
-
+<script src = "static/main.js">
+</script>
 </body>
 </html>
