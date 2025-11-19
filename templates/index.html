@@ -105,15 +105,14 @@
     }
     </style>
     <h1> The Calculator </h1>
-    <p> Wow! You will be surprised </p>
 
     <form action='/about'  method="GET">
      {% csrf_token %}
      <div class= "input_container" >
         <label>Enter First Number </label>
-        <input type="number" name="number1" placeholder="enter number"> </input>
+        <input type="number" name="number1" placeholder="enter number" step="0.00000000000001"> </input>
         <label>Enter Second Number </label>
-        <input type="number" name="number2" placeholder="enter number"> </input>
+        <input type="number" name="number2" placeholder="enter number" step="0.00000000000001"> </input>
     </div>
     <div class= 'buttons'>
         <button type="submit" name="operation" value="addition" class="bot1">+</button>
